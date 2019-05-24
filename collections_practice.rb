@@ -94,6 +94,7 @@ end
 
 
 
+
 def find_cool
   
   
@@ -114,18 +115,6 @@ def organize_schools
   
 
 end
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
