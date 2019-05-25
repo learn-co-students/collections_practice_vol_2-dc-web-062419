@@ -56,21 +56,25 @@ a = []
 end
 
 
+ 
+
+ def count_elements(arr)
+  arr.each do |original_hash|
+    original_hash[:count] = 0
+    name = original_hash[:name]
+    arr.each do |hash|
+      if hash[:name] == name
+        original_hash[:count] += 1
+      end
+    end
+  end.uniq
+ end
 
 
-def count_elements(arr)
-  
-  
-  
-  
-  
-end
 
 
 
-
-
-def merge_data
+def merge_data(keys, data)
   
   
   
