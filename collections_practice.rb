@@ -59,7 +59,7 @@ end
  
 
  def count_elements(arr)
-  arr.each do |original_hash|
+   arr.each do |original_hash|
     original_hash[:count] = 0
     name = original_hash[:name]
     arr.each do |hash|
@@ -68,6 +68,7 @@ end
       end
     end
   end.uniq
+
  end
 
 
