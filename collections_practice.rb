@@ -120,7 +120,7 @@ end
 
 
 
-require'pry'
+
 def organize_schools(arr)
   
   org_arr = {}
@@ -128,19 +128,15 @@ def organize_schools(arr)
   arr.map do |name, location|
 
   		location.map do |key, city|
-        #binding.pry
-  			org_arr[city] ||= [name]
-         # binding.pry
-  			if arr[name][key] == city
+  			org_arr[city] ||= []
+         
+  			  if arr[name][key] == city
   				org_arr[city] << name
-     # binding.pry
-      # else
-        
-      #   org_arr[city] = 
+
   			end
 
   		end
-#binding.pry
+
   end
   
   org_arr  
