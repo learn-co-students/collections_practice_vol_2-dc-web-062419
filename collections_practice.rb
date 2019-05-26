@@ -1,4 +1,3 @@
-# your code goes here
 def begins_with_r(arr)
   r = []
   arr.each do |word|
@@ -58,64 +57,71 @@ end
 
  
 
- def count_elements(arr)
-   arr.each do |original_hash|
-    original_hash[:count] = 0
-    name = original_hash[:name]
-    arr.each do |hash|
-      if hash[:name] == name
-        original_hash[:count] += 1
-      end
-    end
-  end.uniq
+# def count_elements(arr)
+#   arr.each do |original_hash|
+#     original_hash[:count] = 0
+#     name = original_hash[:name]
+#     arr.each do |hash|
+#       if hash[:name] == name
+#         original_hash[:count] += 1
+#       end
+#     end
+#   end.uniq
 
- end
-
-
-
-# require 'pry'
-
-# def merge_data(keys, data)
-  
-#   keys.map do |key|
-#     key.map do |
-#   	binding.pry	
-
-#   data.map do |key2, value2|
-
-#   	binding.pry
-#   end
-#   end
 # end
 
 
 
-
-
-
-
-def find_cool()
+#require 'pry'
+def merge_data(a, b)
   
-  container = []
-  array.each do |element|
-    container << element if element[:temperature] == "cool"
+merged = []
+  a.map do |a_hash|
+
+  	a_hash.map do |keys, values|
+
+  		b.map do |b_hash|
+
+  			b_hash.map do |bkey, bkeyhash|
+  					if bkey == values
+
+  						merged << a_hash.merge(bkeyhash)
+  					end
+
+  			end
+  		end	
+  	end
+
   end
-  container
-
-
+  merged
 end
 
 
 
 
 
-def find_cool
+#require 'pry'
+
+def find_cool(cool)
   
-  
-  
-  
-  
+         	results = []
+
+ 	cool.map do |hashes|
+
+ 		hashes.map do |name, temperature|
+#binding.pry
+ 			if hashes[name] == "cool"
+#binding.pry
+ 				results << hashes
+#binding.pry
+ 		end
+ 	end
 end
+results
+end
+
+
+
 
 
 
