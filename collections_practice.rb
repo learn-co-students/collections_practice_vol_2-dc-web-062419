@@ -1,16 +1,16 @@
 def begins_with_r(arr)
   r = []
   arr.each do |word|
-   if word.start_with?('r')
-     r.push(true)
-   else
-     r.push(false)
-     end
+  if word.start_with?('r')
+    r.push(true)
+  else
+    r.push(false)
+    end
     a = word.split("")
     if a[0] == "r"
-     r.push(true)
-   else
-     r.push(false)
+    r.push(true)
+  else
+    r.push(false)
     end
   end
   r.all?
@@ -20,8 +20,8 @@ end
 def contain_a(arr)
   a = []
     arr.each do |word|
-       contain = word.split("")
-             if  contain.include?("a")
+      contain = word.split("")
+            if  contain.include?("a")
                 a.push(word)
         end
     end
@@ -47,7 +47,7 @@ a = []
   arr.each do |element|
   #binding.pry
     if element.class == String
-   #   binding.pry
+  #   binding.pry
       a.push(element)
     end
   end
@@ -72,7 +72,8 @@ end
 
 
 
-#require 'pry'
+
+
 def merge_data(a, b)
   
 merged = []
@@ -102,54 +103,87 @@ end
 
 
 
-#require 'pry'
+
+
+
+
+
 
 def find_cool(cool)
   
-         	results = []
+        	results = []
+	cool.map do |hashes|
 
- 	cool.map do |hashes|
+		hashes.map do |name, temperature|
 
- 		hashes.map do |name, temperature|
-#binding.pry
- 			if hashes[name] == "cool"
-#binding.pry
- 				results << hashes
-#binding.pry
- 		end
- 	end
+			if hashes[name] == "cool"
+
+				results << hashes
+		end
+	end
 end
 results
 end
 
 
-
-
-
-
-
-
-def organize_schools(arr)
+# def find_cool()
   
-  org_arr = {}
-  
-  arr.map do |name, location|
+#   container = []
+#   array.each do |element|
+#     container << element if element[:temperature] == "cool"
+#   end
+#   container
 
-  		location.map do |key, city|
-  			org_arr[city] ||= []
+
+
+
+
+
+
+
+# def organize_schools(arr)
+  
+#   org_arr = {}
+  
+#   arr.map do |name, location|
+
+#   		location.map do |key, city|
+#   			org_arr[city] ||= []
          
-  			  if arr[name][key] == city
-  				org_arr[city] << name
+#   			  if arr[name][key] == city
+#   				org_arr[city] << name
 
-  			end
+#   			end
+#   		end
 
-  		end
 
-  end
+# #require'pry'
+# def organize_schools(arr)
   
-  org_arr  
+#   org_arr = {}
+  
+#   arr.map do |name, location|
 
-end
+#   		location.map do |key, city|
+#         #binding.pry
+  			
+#         # binding.pry
+#   			if arr[name][key] == city
+#   				org_arr[city] << name
+#   				elsif org_arr[city] ||= [name]
+#     # binding.pry
+#       # else
+        
+#       #   org_arr[city] = 
+#   			end
+
+#   		end
+# #binding.pry
+#   end
+  
+#   org_arr  
+
+# end
 
 
 
