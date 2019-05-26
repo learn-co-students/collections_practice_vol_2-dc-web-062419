@@ -73,17 +73,37 @@ end
 
 
 
+# require 'pry'
+
+# def merge_data(keys, data)
+  
+#   keys.map do |key|
+#     key.map do |
+#   	binding.pry	
+
+#   data.map do |key2, value2|
+
+#   	binding.pry
+#   end
+#   end
+# end
 
 
-def merge_data(keys, data)
+
+
+
+
+
+def find_cool()
   
-  
-  
+  container = []
+  array.each do |element|
+    container << element if element[:temperature] == "cool"
+  end
+  container
 
 
 end
-
-
 
 
 
@@ -91,17 +111,6 @@ end
 
 def find_cool
   
-
-
-
-end
-
-
-
-
-
-def find_cool
-  
   
   
   
@@ -111,13 +120,30 @@ end
 
 
 
+#require'pry'
+def organize_schools(arr)
+  
+  org_arr = {}
+  
+  arr.map do |name, location|
 
-def organize_schools
+  		location.map do |key, city|
+        #binding.pry
+  			if org_arr[city] ||= [name]
+         # binding.pry
+  			elsif arr[name][key] == city
+  				org_arr[city] << name
+     # binding.pry
+      # else
+        
+      #   org_arr[city] = 
+  			end
+
+  		end
+#binding.pry
+  end
   
-  
-  
-  
-  
+  org_arr  
 
 end
 
