@@ -100,6 +100,8 @@ end
 
 
 
+
+
 #require 'pry'
 
 def find_cool(cool)
