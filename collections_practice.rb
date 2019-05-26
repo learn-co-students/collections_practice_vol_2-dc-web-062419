@@ -126,64 +126,31 @@ results
 end
 
 
-# def find_cool()
+
+
+
+
+
+
+
+def organize_schools(arr)
   
-#   container = []
-#   array.each do |element|
-#     container << element if element[:temperature] == "cool"
-#   end
-#   container
-
-
-
-
-
-
-
-
-# def organize_schools(arr)
+  org_arr = {}
   
-#   org_arr = {}
-  
-#   arr.map do |name, location|
+  arr.map do |name, location|
 
-#   		location.map do |key, city|
-#   			org_arr[city] ||= []
+  		location.map do |key, city|
+  			org_arr[city] ||= []
          
-#   			  if arr[name][key] == city
-#   				org_arr[city] << name
+  			  if arr[name][key] == city
+  				org_arr[city] << name
 
-#   			end
-#   		end
+  			end
+  		end
+  		end
+  		org_arr
+end
 
-
-# #require'pry'
-# def organize_schools(arr)
-  
-#   org_arr = {}
-  
-#   arr.map do |name, location|
-
-#   		location.map do |key, city|
-#         #binding.pry
-  			
-#         # binding.pry
-#   			if arr[name][key] == city
-#   				org_arr[city] << name
-#   				elsif org_arr[city] ||= [name]
-#     # binding.pry
-#       # else
-        
-#       #   org_arr[city] = 
-#   			end
-
-#   		end
-# #binding.pry
-#   end
-  
-#   org_arr  
-
-# end
 
 
 
