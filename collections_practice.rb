@@ -57,19 +57,19 @@ end
 
  
 
-# def count_elements(arr)
-#   arr.each do |original_hash|
-#     original_hash[:count] = 0
-#     name = original_hash[:name]
-#     arr.each do |hash|
-#       if hash[:name] == name
-#         original_hash[:count] += 1
-#       end
-#     end
-#   end.uniq
 
-# end
-
+def count_elements(arr)	
+	arr.each do |element|
+	  cur = element
+		element[:count] = 0
+		cur = element[:name]
+	arr.each do |element2|
+			if element2[:name] == cur
+				element[:count] += 1
+			end
+	end
+	end.uniq
+end
 
 
 
