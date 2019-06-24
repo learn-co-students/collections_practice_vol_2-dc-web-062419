@@ -22,3 +22,23 @@ def first_wa(array)
 end
 return wa_array[0]
 end
+
+def remove_non_strings(array)
+  array.delete_if {|x| !(x.is_a? String) }
+end
+
+def count_elements(array)
+
+end
+
+def merge_data()
+
+end
+
+def find_cool()
+
+end
+
+def organize_schools()
+
+end
